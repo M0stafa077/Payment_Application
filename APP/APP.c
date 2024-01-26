@@ -28,68 +28,52 @@ int main()
 		/* First we get the card data */
 		ret = card_get_holder_name(&(tempAccount.accountCard));
 		if (CARD_WRONG_NAME == ret)
-		{
-			continue;
-		}
+			{ continue; }
 		else
-		{ /* Nothing */ }
+			{ /* Nothing */ }
 		
 		ret = card_get_expiry_date(&(tempAccount.accountCard));
 		if (CARD_WRONG_EXP_DATE == ret)
-		{
-			continue;
-		}
+			{ continue; }
 		else
-		{ /* Nothing */ }
+			{ /* Nothing */ }
 
 		ret = card_get_PAN(&(tempAccount.accountCard));
 		if (CARD_WRONG_PAN == ret)
-		{
-			continue;
-		}
+			{ continue; }
 		else
-		{ /* Nothing */ }
+			{ /* Nothing */ }
 
 		/* Second we get the amount of money */
 		ret = is_card_expired(&(tempAccount.accountCard));
 		if (CARD_EXPIRED == ret)
-		{
-			continue;
-		}
+			{ continue; }
 		else
-		{ /* Nothing */ }
+			{ /* Nothing */ }
 
 		ret = get_tranaction_amount(&(tempAccount.transaction));
 		if (TRANSACTION_AMOUNT_EXCEEDED == ret)
-		{
-			continue;
-		}
+			{ continue; }
 		else
-		{ /* Nothing */ }
+			{ /* Nothing */ }
 
 		ret = account_exist(&tempAccount);
 		if (ACCOUNT_NOT_EXIST == ret)
-		{
-			continue;
-		}
+			{ continue; }
 		else
-		{ /* Nothing */ }
+			{ /* Nothing */ }
 
 		ret = account_valid(&tempAccount);
 		if (ACCOUNT_NOT_VALID == ret)
-		{
-			continue;
-		}
+			{ continue; }
 		else
-		{ /* Nothing */ }
+			{ /* Nothing */ }
 
 		ret = is_amount_available(&tempAccount);
 		if (AMOUNT_NOT_AVAILABLE == ret)
-		{
-			continue;
-		}
+			{ continue; }
 		else
-		{ /* Nothing */ }
+			{ /* Nothing */ }
 
 		ret = update_account_balance(&tempAccount);
 
