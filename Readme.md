@@ -13,4 +13,4 @@ The project consists of three main layers as follow:
 
 ## Application Flow Chart
 
-<img src="/payment-flowchart.jpeg" alt="Alt text" width="200" height="200">
+<img src="/payment-flowchart.jpeg" alt="Alt text" width="500" height="300">
