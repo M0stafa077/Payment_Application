@@ -17,7 +17,7 @@ FILE* database = NULL;
 /*---------------  Section: Functions Definition --------------- */
 bool account_exist(Account_t* account)
 {
-	database = fopen("Database.txt", "r");
+	database = fopen("Server/Database.txt", "r");
 	uint8_t buffer[66] = { 0 };
 	uint8_t existFlag = false;
 
